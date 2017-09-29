@@ -9,6 +9,12 @@ use Mix.Config
 config :debian,
   ecto_repos: [Debian.Repo]
 
+config :debian, Debian.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  hostname: "db",
+  pool_size: 10
+
 # Configures the endpoint
 config :debian, DebianWeb.Endpoint,
   url: [host: "localhost"],
