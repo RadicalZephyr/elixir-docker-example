@@ -50,7 +50,7 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :debian, Debian.Repo,
-  adapter: Ecto.Adapters.MySQL,
+  adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
   database: "debian_dev",
