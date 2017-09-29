@@ -4,8 +4,5 @@ WORKDIR /app
 
 ADD . /app
 
+RUN mix local.hex --force
 RUN mix deps.get
-
-EXPOSE 80
-
-CMD ["mix", "phx.server"]
